@@ -2,7 +2,7 @@ package entity;
 
 import java.time.LocalDate;
 
-public class Tarefa {
+public class Tarefa{
 
     private String nome;
 
@@ -12,11 +12,11 @@ public class Tarefa {
 
     private int nivelDePrioridade;
 
-    private String categoria;
+    private Categoria categoria;
 
     private Status status;
 
-    public Tarefa(String nome, String descricao, LocalDate dataDeTermino, int nivelDePrioridade, String categoria, Status status) {
+    public Tarefa(String nome, String descricao, LocalDate dataDeTermino, int nivelDePrioridade, Categoria categoria, Status status) {
         this.nome = nome;
         this.descricao = descricao;
         this.dataDeTermino = dataDeTermino;
@@ -69,11 +69,11 @@ public class Tarefa {
         this.nivelDePrioridade = nivelDePrioridade;
     }
 
-    public String getCategoria() {
+    public Categoria getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(String categoria) {
+    public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
     }
 
